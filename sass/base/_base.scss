@@ -1,0 +1,9 @@
+* {
+    @include margin-padding(0, 0);
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    outline: none;
+}

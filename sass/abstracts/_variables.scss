@@ -1,0 +1,26 @@
+// COLORS
+$color-primary: #0a0a36;
+$color-primary-dark: #01011d;
+
+$color-secondary: #321763;
+$color-secondary-light: #8e66de;
+
+$color-accent: #d9e520;
+
+$color-grey-dark: #262626;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT SIZES
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+// BREAK POINTS
+$breakpoints: (
+    sm: 390px,
+    md: 768px,
+    lg: 1024px
+);

@@ -1,0 +1,6 @@
+.flex-center-row {
+    @include flex-center(row);
+}
+.flex-center-col {
+    @include flex-center(column);
+}

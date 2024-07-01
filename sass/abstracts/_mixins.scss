@@ -1,0 +1,31 @@
+@mixin btn($bg-color, $text-color, $border-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: $border-color;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@mixin width-height($width: fit-content, $height: fit-content) {
+    width: $width;
+    height: $height;
+}
+
+@mixin margin-padding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex-center($flex-direction: column) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin media-up($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

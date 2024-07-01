@@ -1,0 +1,16 @@
+.isologo {
+    @include width-height(150px, 70px);
+    .isotipo {
+        @include width-height(70px, 70px);
+    }
+    .logotipo {
+        @include width-height();
+        strong {
+            color: $color-secondary-light;
+            width: 100%;
+        }
+        span {
+            color: $color-secondary;
+        }
+    }
+}
