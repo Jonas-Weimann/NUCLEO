@@ -1,7 +1,7 @@
 @mixin btn($bg-color, $text-color, $border-color) {
     background-color: $bg-color;
     color: $text-color;
-    border: $border-color;
+    border: $border-color 1.5px solid;
     text-decoration: none;
     text-align: center;
     box-sizing: border-box;
@@ -17,10 +17,10 @@
     padding: $padding;
 }
 
-@mixin flex-center($flex-direction: column) {
+@mixin flex-center($flex-direction: column, $justify: center) {
     display: flex;
     flex-direction: $flex-direction;
-    justify-content: center;
+    justify-content: $justify;
     align-items: center;
 }
 

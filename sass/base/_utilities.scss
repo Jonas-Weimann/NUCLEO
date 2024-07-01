@@ -4,3 +4,6 @@
 .flex-center-col {
     @include flex-center(column);
 }
+.rounded {
+    border-radius: 1rem;
+}

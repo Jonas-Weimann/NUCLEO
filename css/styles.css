@@ -23,9 +23,29 @@ textarea {
   align-items: center;
 }
 
+.rounded {
+  border-radius: 1rem;
+}
+
+body {
+  display: flex;
+  width: 100dvw;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+}
+
 .isologo {
   width: 150px;
   height: 70px;
+  margin: 10px 20px;
+  padding: 0;
 }
 .isologo .isotipo {
   width: 70px;
@@ -36,9 +56,71 @@ textarea {
   height: fit-content;
 }
 .isologo .logotipo strong {
-  color: #8e66de;
+  color: #b996ff;
   width: 100%;
 }
 .isologo .logotipo span {
-  color: #321763;
+  color: #8e66de;
+}
+
+nav {
+  width: fit-content;
+  height: 90px;
+}
+nav .navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  gap: 2rem;
+}
+nav .navegacion li {
+  width: 105px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .navegacion li a {
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  color: #b996ff;
+  border: transparent 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.botones {
+  gap: 1rem;
+  margin-right: 20px;
+}
+.botones .register {
+  background-color: transparent;
+  color: #d9e520;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+}
+.botones .log-in {
+  background-color: #d9e520;
+  color: #000;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  text-wrap: nowrap;
 }

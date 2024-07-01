@@ -1,5 +1,17 @@
+body {
+    display: flex;
+    width: 100dvw;
+}
+
+header {
+    @include flex-center(row, space-between);
+    width: 100%;
+    background-color: $color-black;
+}
+
 .isologo {
     @include width-height(150px, 70px);
+    @include margin-padding(10px 20px, 0);
     .isotipo {
         @include width-height(70px, 70px);
     }
@@ -12,5 +24,42 @@
         span {
             color: $color-secondary;
         }
+    }
+}
+
+nav {
+    @include width-height(fit-content, 90px);
+    .navegacion {
+        @include flex-center(row);
+        @include width-height(fit-content, 100%);
+        gap: 2rem;
+        li {
+            @include width-height(105px, 100%);
+            @include flex-center;
+            a {
+                @include width-height(100%, fit-content);
+                @include btn(transparent, $color-secondary-light, transparent);
+                padding: 10px 15px;
+                font-size: $s-size;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.botones {
+    gap: 1rem;
+    margin-right: 20px;
+    .register {
+        @include btn(transparent, $color-accent, $color-accent);
+        padding: 15px 20px;
+        font-size: $s-size;
+    }
+    .log-in {
+        @include btn($color-accent, $color-black, $color-accent);
+        padding: 15px 20px;
+        font-size: $s-size;
+        text-wrap: nowrap;
     }
 }
