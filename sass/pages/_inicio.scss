@@ -1,0 +1,36 @@
+.landing {
+    @include flex-center(row, center, center);
+    background: url(../images/index/landing-fondo.png);
+    background-size: cover;
+    &__text {
+        @include flex-center(column, left, normal);
+        @include width-height(1000px);
+        padding: 20px 50px;
+        h2 {
+            font-size: 5rem;
+        }
+        p {
+            margin: 1em 0;
+            font-size: 1.7rem;
+        }
+        &--botonera {
+            @include flex-center(row, left, normal);
+            gap: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+    &__images {
+        margin: 160px 50px;
+    }
+}
+
+.boton {
+    &-catalogo {
+        @include btn($color-accent, $color-black, $color-accent);
+        padding: 10px 15px;
+    }
+    &-cotizacion {
+        @include btn(transparent, $color-accent, $color-accent);
+        padding: 10px 15px;
+    }
+}

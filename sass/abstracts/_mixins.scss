@@ -17,11 +17,11 @@
     padding: $padding;
 }
 
-@mixin flex-center($flex-direction: column, $justify: center) {
+@mixin flex-center($flex-direction: column, $justify: center, $align: center) {
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify;
-    align-items: center;
+    align-items: $align;
 }
 
 @mixin media-up($breakpoint) {

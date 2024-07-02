@@ -7,3 +7,31 @@
 .rounded {
     border-radius: 0.8rem;
 }
+
+.color {
+    &-white {
+        color: $color-white;
+    }
+    &-black {
+        color: $color-black;
+    }
+    &-accent {
+        color: $color-accent;
+    }
+    &-primary {
+        color: $color-primary;
+        &-dark {
+            color: $color-primary-dark;
+        }
+    }
+    &-secondary {
+        color: $color-secondary;
+        &-light {
+            color: $color-secondary-light;
+        }
+    }
+}
+.section {
+    width: 100dvw;
+    height: fit-content;
+}
