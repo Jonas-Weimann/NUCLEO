@@ -10,16 +10,18 @@ header {
 }
 
 .isologo {
-    @include width-height(150px, 70px);
-    @include margin-padding(10px 20px, 0);
+    cursor: pointer;
     .isotipo {
         @include width-height(70px, 70px);
+        margin: 10px 5px 10px 10px;
     }
     .logotipo {
-        @include width-height();
+        @include width-height(135px);
+        padding: 5px 10px;
         strong {
             color: $color-secondary-light;
             width: 100%;
+            font-size: $m-size;
         }
         span {
             color: $color-secondary;
@@ -34,7 +36,7 @@ nav {
         @include width-height(fit-content, 100%);
         gap: 2rem;
         li {
-            @include width-height(105px, 100%);
+            @include width-height(130px, 100%);
             @include flex-center;
             a {
                 @include width-height(100%, fit-content);
@@ -53,13 +55,13 @@ nav {
     margin-right: 20px;
     .register {
         @include btn(transparent, $color-accent, $color-accent);
-        padding: 15px 20px;
-        font-size: $s-size;
+        padding: 12.5px 15px;
+        font-size: 1rem;
     }
     .log-in {
         @include btn($color-accent, $color-black, $color-accent);
-        padding: 15px 20px;
-        font-size: $s-size;
+        padding: 12.5px 15px;
+        font-size: 1rem;
         text-wrap: nowrap;
     }
 }
