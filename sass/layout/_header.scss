@@ -7,10 +7,18 @@ header {
     @include flex-center(row, space-between);
     width: 100%;
     background-color: $color-black;
+    flex-wrap: wrap;
+    @include media-up(md, lg) {
+        flex-direction: column;
+    }
 }
 
 .isologo {
     cursor: pointer;
+    @include media-up(md, lg) {
+        width: 100dvw;
+        margin-top: 30px;
+    }
     .isotipo {
         @include width-height(70px, 70px);
         margin: 10px 5px 10px 10px;
@@ -30,9 +38,18 @@ header {
 }
 
 nav {
+    @include media-up(sm, md) {
+        display: none;
+    }
+    @include media-up(md, lg) {
+        width: 100dvw;
+    }
     @include width-height(fit-content, 90px);
     .navegacion {
         @include flex-center(row);
+        @include media-up(md, lg) {
+            width: 100%;
+        }
         @include width-height(fit-content, 100%);
         li {
             @include width-height(130px, 100%);
@@ -47,20 +64,85 @@ nav {
             }
         }
     }
+    &.active {
+        position: fixed;
+        top: 90px;
+        @include flex-center;
+        background-color: $color-black;
+        width: 100%;
+        transition: 0.3s;
+        gap: 0;
+    }
 }
 
 .botones {
     gap: 1rem;
     margin-right: 20px;
+    @include media-up(sm, md) {
+        display: none;
+    }
+    @include media-up(md, lg) {
+        width: 100%;
+        padding: 10px 100px;
+        margin: 0;
+    }
     .register {
         @include btn(transparent, $color-accent, $color-accent);
         padding: 12.5px 15px;
         font-size: 1rem;
+        @include media-up(md, lg) {
+            width: 100%;
+        }
     }
     .log-in {
         @include btn($color-accent, $color-black, $color-accent);
         padding: 12.5px 15px;
         font-size: 1rem;
         text-wrap: nowrap;
+        @include media-up(md, lg) {
+            width: 100%;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    @include media-up(sm, md) {
+        display: block;
+        height: 30px;
+    }
+
+    &.active .bar {
+        &-1 {
+            animation: bar-top 0.3s;
+            animation-fill-mode: forwards;
+        }
+        &-2 {
+            opacity: 0;
+            transition: all 0.4s;
+        }
+
+        &-3 {
+            animation: bar-btm 0.3s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+.bar {
+    @include width-height(25px, 3px);
+    display: block;
+    margin: 5px 20px;
+    background-color: #b996ff;
+    &-1.animation {
+        animation: bar-top-rev 0.3s;
+        animation-fill-mode: forwards;
+    }
+    &-2 {
+        transition: all 0.4s;
+    }
+    &-3.animation {
+        animation: bar-btm-rev 0.3s;
+        animation-fill-mode: forwards;
     }
 }

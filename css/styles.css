@@ -1,4 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes bar-top {
+  0% {
+    display: block;
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+@keyframes bar-btm {
+  0% {
+    display: block;
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@keyframes bar-top-rev {
+  0% {
+    transform: translateY(8px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes bar-btm-rev {
+  0% {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
 .montserrat-100 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -193,10 +237,22 @@ header {
   align-items: center;
   width: 100%;
   background-color: #000;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  header {
+    flex-direction: column;
+  }
 }
 
 .isologo {
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .isologo {
+    width: 100dvw;
+    margin-top: 30px;
+  }
 }
 .isologo .isotipo {
   width: 70px;
@@ -221,6 +277,16 @@ nav {
   width: fit-content;
   height: 90px;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  nav {
+    width: 100dvw;
+  }
+}
 nav .navegacion {
   display: flex;
   flex-direction: row;
@@ -228,6 +294,11 @@ nav .navegacion {
   align-items: center;
   width: fit-content;
   height: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  nav .navegacion {
+    width: 100%;
+  }
 }
 nav .navegacion li {
   width: 130px;
@@ -251,10 +322,34 @@ nav .navegacion li a {
   text-align: center;
   justify-content: center;
 }
+nav.active {
+  position: fixed;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  transition: 0.3s;
+  gap: 0;
+}
 
 .botones {
   gap: 1rem;
   margin-right: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .botones {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .botones {
+    width: 100%;
+    padding: 10px 100px;
+    margin: 0;
+  }
 }
 .botones .register {
   background-color: transparent;
@@ -266,6 +361,11 @@ nav .navegacion li a {
   padding: 12.5px 15px;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .botones .register {
+    width: 100%;
+  }
+}
 .botones .log-in {
   background-color: #d9e520;
   color: #000;
@@ -276,6 +376,52 @@ nav .navegacion li a {
   padding: 12.5px 15px;
   font-size: 1rem;
   text-wrap: nowrap;
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .botones .log-in {
+    width: 100%;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    height: 30px;
+  }
+}
+.hamburger.active .bar-1 {
+  animation: bar-top 0.3s;
+  animation-fill-mode: forwards;
+}
+.hamburger.active .bar-2 {
+  opacity: 0;
+  transition: all 0.4s;
+}
+.hamburger.active .bar-3 {
+  animation: bar-btm 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  display: block;
+  margin: 5px 20px;
+  background-color: #b996ff;
+}
+.bar-1.animation {
+  animation: bar-top-rev 0.3s;
+  animation-fill-mode: forwards;
+}
+.bar-2 {
+  transition: all 0.4s;
+}
+.bar-3.animation {
+  animation: bar-btm-rev 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .landing {
