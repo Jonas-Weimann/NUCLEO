@@ -24,8 +24,8 @@
     align-items: $align;
 }
 
-@mixin media-up($breakpoint) {
-    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+@mixin media-up($min, $max) {
+    @media screen and (min-width: map-get($breakpoints, $min)) and (max-width: map-get($breakpoints, $max)) {
         @content;
     }
 }

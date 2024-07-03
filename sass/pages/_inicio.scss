@@ -21,6 +21,10 @@
     }
     &__images {
         margin: 160px 50px;
+        img {
+            width: 35dvw;
+            height: auto;
+        }
     }
 }
 

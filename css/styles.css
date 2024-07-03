@@ -228,7 +228,6 @@ nav .navegacion {
   align-items: center;
   width: fit-content;
   height: 100%;
-  gap: 2rem;
 }
 nav .navegacion li {
   width: 130px;
@@ -313,6 +312,10 @@ nav .navegacion li a {
 }
 .landing__images {
   margin: 160px 50px;
+}
+.landing__images img {
+  width: 35dvw;
+  height: auto;
 }
 
 .boton-catalogo {

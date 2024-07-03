@@ -34,7 +34,6 @@ nav {
     .navegacion {
         @include flex-center(row);
         @include width-height(fit-content, 100%);
-        gap: 2rem;
         li {
             @include width-height(130px, 100%);
             @include flex-center;
