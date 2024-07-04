@@ -282,7 +282,6 @@ nav {
     opacity: 0;
     position: absolute;
     transform: translateY(-200%);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -472,6 +471,14 @@ nav.active {
   background: url(../images/index/landing-fondo.png);
   background-size: cover;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .landing__text {
   display: flex;
   flex-direction: column;
@@ -481,12 +488,51 @@ nav.active {
   height: fit-content;
   padding: 20px 50px;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .landing__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    margin: 50px 0 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .landing__text {
+    width: 60%;
+    height: auto;
+  }
+}
 .landing__text h2 {
   font-size: 5rem;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .landing__text h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .landing__text h2 {
+    font-size: 5dvw;
+  }
+}
 .landing__text p {
   margin: 1em 0;
+  max-width: 700px;
   font-size: 1.7rem;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .landing__text p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .landing__text p {
+    font-size: 2dvw;
+    max-width: 500px;
+  }
 }
 .landing__text--botonera {
   display: flex;
@@ -503,7 +549,44 @@ nav.active {
   width: 35dvw;
   height: auto;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .landing__images img {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .landing__images img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .landing__images {
+    width: 100%;
+    margin: 40px 0px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .landing__images {
+    width: 40%;
+    height: auto;
+    margin: 100px 0;
+  }
+}
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .boton {
+    font-size: 3dvw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .boton {
+    font-size: 1.7dvw;
+  }
+}
 .boton-catalogo {
   background-color: #d9e520;
   color: #000;

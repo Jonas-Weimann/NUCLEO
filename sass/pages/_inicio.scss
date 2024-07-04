@@ -2,16 +2,43 @@
     @include flex-center(row, center, center);
     background: url(../images/index/landing-fondo.png);
     background-size: cover;
+    @include media-up(sm, md) {
+        @include flex-center(column, center, center);
+    }
     &__text {
         @include flex-center(column, left, normal);
         @include width-height(1000px);
         padding: 20px 50px;
+        @include media-up(sm, md) {
+            @include flex-center(column, center, center);
+            width: 100dvw;
+            margin: 50px 0 0 0;
+        }
+        @include media-up(md, lg) {
+            width: 60%;
+            height: auto;
+        }
         h2 {
             font-size: 5rem;
+            @include media-up(sm, md) {
+                font-size: 3rem;
+            }
+            @include media-up(md, lg) {
+                font-size: 5dvw;
+            }
         }
         p {
             margin: 1em 0;
+            max-width: 700px;
             font-size: 1.7rem;
+            @include media-up(sm, md) {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            @include media-up(md, lg) {
+                font-size: 2dvw;
+                max-width: 500px;
+            }
         }
         &--botonera {
             @include flex-center(row, left, normal);
@@ -24,11 +51,36 @@
         img {
             width: 35dvw;
             height: auto;
+            @include media-up(sm, md) {
+                width: 100%;
+                padding: 0 20px;
+                height: auto;
+            }
+            @include media-up(md, lg) {
+                width: 100%;
+                height: auto;
+            }
+        }
+        @include media-up(sm, md) {
+            width: 100%;
+            margin: 40px 0px;
+            height: auto;
+        }
+        @include media-up(md, lg) {
+            width: 40%;
+            height: auto;
+            margin: 100px 0;
         }
     }
 }
 
 .boton {
+    @include media-up(sm, md) {
+        font-size: 3dvw;
+    }
+    @include media-up(md, lg) {
+        font-size: 1.7dvw;
+    }
     &-catalogo {
         @include btn($color-accent, $color-black, $color-accent);
         padding: 10px 15px;
