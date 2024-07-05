@@ -193,6 +193,10 @@ textarea {
   outline: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .flex-center-row {
   display: flex;
   flex-direction: row;
@@ -517,16 +521,16 @@ nav.active {
     height: auto;
   }
 }
-.landing__text h2 {
+.landing__text h1 {
   font-size: 5rem;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .landing__text h2 {
+  .landing__text h1 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1300px) {
-  .landing__text h2 {
+  .landing__text h1 {
     font-size: 5dvw;
   }
 }
@@ -682,4 +686,64 @@ nav.active {
 
 .xiaomi img {
   width: 6dvw;
+}
+
+.about-us {
+  max-width: 100dvw;
+  background-color: #01011d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about-us img {
+  width: 33%;
+  border-radius: 20px;
+}
+.about-us img:last-child {
+  transform: rotateY(180deg);
+}
+.about-us div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 34%;
+  gap: 2dvw;
+}
+.about-us div h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: montserrat, sans-serif;
+  color: #8e66de;
+  font-size: 3.5dvw;
+  text-wrap: wrap;
+  font-weight: 400;
+}
+.about-us div h2 strong {
+  color: #d9e520;
+  font-weight: 600;
+}
+.about-us div p {
+  width: 80%;
+  font-size: 1.3dvw;
+  color: #fff;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+.about-us div .boton {
+  background-color: #d9e520;
+  color: #000;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.5dvw 2dvw;
+  border-radius: 10px;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 1.5dvw;
 }

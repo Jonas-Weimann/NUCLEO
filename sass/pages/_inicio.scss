@@ -18,7 +18,7 @@
             width: 60%;
             height: auto;
         }
-        h2 {
+        h1 {
             font-size: 5rem;
             @include media-up(sm, md) {
                 font-size: 3rem;
@@ -149,4 +149,50 @@
 }
 .xiaomi img {
     width: 6dvw;
+}
+
+.about-us {
+    max-width: 100dvw;
+    background-color: $color-primary-dark;
+    @include flex-center(row, center, center);
+    img {
+        width: 33%;
+        border-radius: 20px;
+        &:last-child {
+            transform: rotateY(180deg);
+        }
+    }
+    div {
+        @include flex-center(column, center, center);
+        height: 100%;
+        width: 34%;
+        gap: 2dvw;
+        h2 {
+            @include flex-center(column, center, center);
+            font-family: montserrat, sans-serif;
+            color: $color-secondary;
+            font-size: 3.5dvw;
+            text-wrap: wrap;
+            font-weight: 400;
+            strong {
+                color: $color-accent;
+                font-weight: 600;
+            }
+        }
+        p {
+            width: 80%;
+            font-size: 1.3dvw;
+            color: $color-white;
+            text-align: center;
+            font-family: "Exo 2", sans-serif;
+        }
+        .boton {
+            @include btn($color-accent, $color-black, $color-accent);
+            padding: 0.5dvw 2dvw;
+            border-radius: 10px;
+            font-family: montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 1.5dvw;
+        }
+    }
 }
