@@ -45,3 +45,18 @@
         transform: translateY(0px) rotate(0deg);
     }
 }
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+@keyframes scrollrev {
+    from {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+    to {
+        transform: translate(0%);
+    }
+}
