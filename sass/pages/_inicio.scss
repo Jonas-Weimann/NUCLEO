@@ -89,6 +89,9 @@
         @include btn(transparent, $color-accent, $color-accent);
         padding: 10px 15px;
     }
+    &:hover {
+        @include btn($color-accent, $color-primary-dark, $color-accent);
+    }
 }
 
 //seccion de mas info
@@ -187,12 +190,81 @@
             font-family: "Exo 2", sans-serif;
         }
         .boton {
-            @include btn($color-accent, $color-black, $color-accent);
+            @include btn(transparent, $color-accent, $color-accent);
             padding: 0.5dvw 2dvw;
             border-radius: 10px;
             font-family: montserrat, sans-serif;
             font-weight: 500;
-            font-size: 1.5dvw;
+            font-size: 1.2dvw;
+            &:hover {
+                @include btn($color-accent, $color-primary-dark, $color-accent);
+            }
+        }
+    }
+}
+
+.productos {
+    @include flex-center(column, center, center);
+    background: rgb(3, 3, 33);
+    background: linear-gradient(156deg, rgba(3, 3, 33, 1) 44%, rgba(71, 26, 88, 1) 100%);
+    h3 {
+        @include flex-center(column, center, center);
+        font-family: montserrat, sans-serif;
+        color: $color-secondary-light;
+        font-size: 3.5dvw;
+        text-wrap: wrap;
+        font-weight: 500;
+        padding: 3dvw;
+    }
+    &__imagenes {
+        width: 100%;
+        @include flex-center(row, center, center);
+        a {
+            max-width: 20%;
+            width: 20%;
+            @include flex-center(column, center, center);
+            text-decoration: none;
+            font-family: montserrat, sans-serif;
+            font-size: 2.5dvw;
+            color: $color-white;
+            height: fit-content;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+            cursor: default;
+            &:hover {
+                cursor: pointer;
+                filter: grayscale(0);
+                transition: all 0.2s;
+                span {
+                    transform: translateY(-100%);
+                    background-color: transparent;
+                    backdrop-filter: blur(20px);
+                    transition: all 0.2s;
+                }
+            }
+            img {
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 0;
+                transition: all 0.2s;
+            }
+        }
+    }
+    .boton {
+        @include btn(transparent, $color-accent, $color-accent);
+        font-family: montserrat, sans-serif;
+        padding: 0.5dvw 1dvw;
+        margin: 2em;
+        border-radius: 10px;
+        font-family: montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 1.2dvw;
+        &:hover {
+            @include btn($color-accent, $color-primary-dark, $color-accent);
         }
     }
 }
