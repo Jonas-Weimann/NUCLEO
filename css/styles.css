@@ -770,7 +770,7 @@ nav.active {
   justify-content: center;
   align-items: center;
   background: rgb(3, 3, 33);
-  background: linear-gradient(156deg, rgb(3, 3, 33) 44%, rgb(71, 26, 88) 100%);
+  background: linear-gradient(180deg, rgb(3, 3, 33) 0%, rgb(122, 24, 102) 62%, rgb(3, 3, 33) 100%);
 }
 .productos h3 {
   display: flex;
@@ -837,13 +837,205 @@ nav.active {
   box-sizing: border-box;
   font-family: montserrat, sans-serif;
   padding: 0.5dvw 1dvw;
-  margin: 2em;
+  margin: 2em 0 3em 0;
   border-radius: 10px;
   font-family: montserrat, sans-serif;
   font-weight: 500;
   font-size: 1.2dvw;
 }
 .productos .boton:hover {
+  background-color: #d9e520;
+  color: #01011d;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(122, 24, 102);
+  background: radial-gradient(rgb(122, 24, 102) 0%, rgb(3, 3, 33) 70%, rgb(3, 3, 33) 89%);
+}
+.servicios h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: montserrat, sans-serif;
+  color: #b996ff;
+  font-size: 3.5dvw;
+  text-wrap: wrap;
+  font-weight: 500;
+}
+.servicios .container {
+  width: 80%;
+  margin: 1em 0;
+  height: 40dvw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "servicio-01 servicio-02 servicio-02 servicio-05" "servicio-03 servicio-03 servicio-04 servicio-05";
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.servicios .servicio-01 {
+  grid-area: servicio-01;
+  background: url(../images/index/servicio-01.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.1s ease;
+}
+.servicios .servicio-01:hover {
+  scale: 1.05;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.servicios .servicio-01 h4 {
+  margin: 0.5em 0 0 0.5em;
+  font-family: montserrat, sans-serif;
+  font-size: 3dvw;
+  font-weight: 500;
+  color: #d9e520;
+}
+.servicios .servicio-01 p {
+  margin: 0 1em;
+  font-family: "exo 2", sans-serif;
+  font-size: 1.7dvw;
+  font-weight: 500;
+  color: #fff;
+  width: 76%;
+}
+.servicios .servicio-02 {
+  grid-area: servicio-02;
+  background: url(../images/index/servicio-02.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.1s ease;
+}
+.servicios .servicio-02:hover {
+  scale: 1.05;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.servicios .servicio-02 h4 {
+  margin: 0.5em 0 0 0.5em;
+  font-family: montserrat, sans-serif;
+  font-size: 3dvw;
+  font-weight: 500;
+  color: #d9e520;
+}
+.servicios .servicio-02 p {
+  margin: 0 1em;
+  font-family: "exo 2", sans-serif;
+  font-size: 1.7dvw;
+  font-weight: 500;
+  color: #fff;
+  width: 76%;
+}
+.servicios .servicio-03 {
+  grid-area: servicio-03;
+  background: url(../images/index/servicio-03.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.1s ease;
+}
+.servicios .servicio-03:hover {
+  scale: 1.05;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.servicios .servicio-03 h4 {
+  margin: 0.5em 0 0 0.5em;
+  font-family: montserrat, sans-serif;
+  font-size: 3dvw;
+  font-weight: 500;
+  color: #d9e520;
+}
+.servicios .servicio-03 p {
+  margin: 0 1em;
+  font-family: "exo 2", sans-serif;
+  font-size: 1.7dvw;
+  font-weight: 500;
+  color: #fff;
+  width: 76%;
+}
+.servicios .servicio-04 {
+  grid-area: servicio-04;
+  background: url(../images/index/servicio-04.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.1s ease;
+}
+.servicios .servicio-04:hover {
+  scale: 1.05;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.servicios .servicio-04 h4 {
+  margin: 0.5em 0 0 0.5em;
+  font-family: montserrat, sans-serif;
+  font-size: 3dvw;
+  font-weight: 500;
+  color: #d9e520;
+}
+.servicios .servicio-04 p {
+  margin: 0 1em;
+  font-family: "exo 2", sans-serif;
+  font-size: 1.7dvw;
+  font-weight: 500;
+  color: #fff;
+  width: 76%;
+}
+.servicios .servicio-05 {
+  grid-area: servicio-05;
+  background: url(../images/index/servicio-05.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.1s ease;
+}
+.servicios .servicio-05:hover {
+  scale: 1.05;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.servicios .servicio-05 h4 {
+  margin: 0.5em 0 0 0.5em;
+  font-family: montserrat, sans-serif;
+  font-size: 3dvw;
+  font-weight: 500;
+  color: #d9e520;
+}
+.servicios .servicio-05 p {
+  margin: 0 1em;
+  font-family: "exo 2", sans-serif;
+  font-size: 1.7dvw;
+  font-weight: 500;
+  color: #fff;
+  width: 76%;
+}
+.servicios .boton {
+  background-color: transparent;
+  color: #d9e520;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+  padding: 0.5dvw 1dvw;
+  margin: 2em 0 3em 0;
+  border-radius: 10px;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 1.2dvw;
+}
+.servicios .boton:hover {
   background-color: #d9e520;
   color: #01011d;
   border: #d9e520 1.5px solid;

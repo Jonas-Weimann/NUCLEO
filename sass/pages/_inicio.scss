@@ -206,7 +206,7 @@
 .productos {
     @include flex-center(column, center, center);
     background: rgb(3, 3, 33);
-    background: linear-gradient(156deg, rgba(3, 3, 33, 1) 44%, rgba(71, 26, 88, 1) 100%);
+    background: linear-gradient(180deg, rgba(3, 3, 33, 1) 0%, rgba(122, 24, 102, 1) 62%, rgba(3, 3, 33, 1) 100%);
     h3 {
         @include flex-center(column, center, center);
         font-family: montserrat, sans-serif;
@@ -258,7 +258,80 @@
         @include btn(transparent, $color-accent, $color-accent);
         font-family: montserrat, sans-serif;
         padding: 0.5dvw 1dvw;
-        margin: 2em;
+        margin: 2em 0 3em 0;
+        border-radius: 10px;
+        font-family: montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 1.2dvw;
+
+        &:hover {
+            @include btn($color-accent, $color-primary-dark, $color-accent);
+        }
+    }
+}
+.servicios {
+    @include flex-center(column, center, center);
+    background: rgb(122, 24, 102);
+    background: radial-gradient(rgba(122, 24, 102, 1) 0%, rgba(3, 3, 33, 1) 70%, rgba(3, 3, 33, 1) 89%);
+    h3 {
+        @include flex-center(column, center, center);
+        font-family: montserrat, sans-serif;
+        color: $color-secondary-light;
+        font-size: 3.5dvw;
+        text-wrap: wrap;
+        font-weight: 500;
+    }
+    .container {
+        width: 80%;
+        margin: 1em 0;
+        height: 40dvw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "servicio-01 servicio-02 servicio-02 servicio-05"
+            "servicio-03 servicio-03 servicio-04 servicio-05";
+        background-color: rgba(0, 0, 0, 0.219);
+        border-radius: 20px;
+        padding: 1rem;
+    }
+    @for $i from 1 through 5 {
+        .servicio-0#{$i} {
+            grid-area: servicio-0#{$i};
+            background: url(../images/index/servicio-0#{$i}.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            transition: all 0.1s ease;
+
+            &:hover {
+                scale: 1.05;
+                transition: all 0.2s ease;
+                cursor: pointer;
+            }
+            h4 {
+                margin: 0.5em 0 0 0.5em;
+                font-family: montserrat, sans-serif;
+                font-size: 3dvw;
+                font-weight: 500;
+                color: $color-accent;
+            }
+            p {
+                margin: 0 1em;
+                font-family: "exo 2", sans-serif;
+                font-size: 1.7dvw;
+                font-weight: 500;
+                color: $color-white;
+                width: 76%;
+            }
+        }
+    }
+    .boton {
+        @include btn(transparent, $color-accent, $color-accent);
+        font-family: montserrat, sans-serif;
+        padding: 0.5dvw 1dvw;
+        margin: 2em 0 3em 0;
         border-radius: 10px;
         font-family: montserrat, sans-serif;
         font-weight: 500;
