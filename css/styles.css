@@ -779,7 +779,7 @@ nav.active {
   align-items: center;
   font-family: montserrat, sans-serif;
   color: #b996ff;
-  font-size: 3.5dvw;
+  font-size: 2.5dvw;
   text-wrap: wrap;
   font-weight: 500;
   padding: 3dvw;
@@ -867,7 +867,7 @@ nav.active {
   align-items: center;
   font-family: montserrat, sans-serif;
   color: #b996ff;
-  font-size: 3.5dvw;
+  font-size: 2.5dvw;
   text-wrap: wrap;
   font-weight: 500;
 }
@@ -1036,6 +1036,124 @@ nav.active {
   font-size: 1.2dvw;
 }
 .servicios .boton:hover {
+  background-color: #d9e520;
+  color: #01011d;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.opiniones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #030321;
+}
+.opiniones h5 {
+  font-family: montserrat, sans-serif;
+  color: #b996ff;
+  font-size: 2.5dvw;
+  text-wrap: wrap;
+  font-weight: 500;
+  padding: 2dvw 0;
+}
+.opiniones__clientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 2em 0;
+}
+.opiniones__clientes .cliente-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0;
+  font-family: "exo 2", sans-serif;
+  color: #fff;
+}
+.opiniones__clientes .cliente-1 img {
+  width: 30%;
+  border-radius: 50%;
+}
+.opiniones__clientes .cliente-1 span {
+  margin: 1em 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5dvw;
+}
+.opiniones__clientes .cliente-1 p {
+  font-size: 1dvw;
+  text-align: center;
+}
+.opiniones__clientes .cliente-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0;
+  font-family: "exo 2", sans-serif;
+  color: #fff;
+}
+.opiniones__clientes .cliente-2 img {
+  width: 30%;
+  border-radius: 50%;
+}
+.opiniones__clientes .cliente-2 span {
+  margin: 1em 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5dvw;
+}
+.opiniones__clientes .cliente-2 p {
+  font-size: 1dvw;
+  text-align: center;
+}
+.opiniones__clientes .cliente-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0;
+  font-family: "exo 2", sans-serif;
+  color: #fff;
+}
+.opiniones__clientes .cliente-3 img {
+  width: 30%;
+  border-radius: 50%;
+}
+.opiniones__clientes .cliente-3 span {
+  margin: 1em 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5dvw;
+}
+.opiniones__clientes .cliente-3 p {
+  font-size: 1dvw;
+  text-align: center;
+}
+.opiniones .boton {
+  background-color: transparent;
+  color: #d9e520;
+  border: #d9e520 1.5px solid;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+  padding: 0.5dvw 1dvw;
+  margin: 2em 0 3em 0;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.2dvw;
+}
+.opiniones .boton:hover {
   background-color: #d9e520;
   color: #01011d;
   border: #d9e520 1.5px solid;
