@@ -389,8 +389,35 @@
         border-radius: 10px;
         font-weight: 500;
         font-size: 1.2dvw;
+
         &:hover {
             @include btn($color-accent, $color-primary-dark, $color-accent);
+        }
+    }
+}
+.contacto {
+    @include flex-center(row, center, center);
+    background-color: $color-primary;
+    gap: 3em;
+    h6 {
+        font-family: montserrat, sans-serif;
+        color: $color-secondary-light;
+        font-size: 2.5dvw;
+        text-wrap: wrap;
+        font-weight: 500;
+        padding: 2dvw 0;
+    }
+    a {
+        font-family: montserrat, sans-serif;
+        color: $color-white;
+        font-size: 2.5dvw;
+        text-wrap: wrap;
+        font-weight: 500;
+        padding: 2dvw 0;
+        text-decoration: none;
+        transition: all 0.1s;
+        &:hover {
+            color: $color-accent;
         }
     }
 }
