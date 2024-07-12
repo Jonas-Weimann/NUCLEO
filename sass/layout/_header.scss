@@ -11,14 +11,17 @@ header {
     @include media-up(md, lg) {
         flex-direction: column;
     }
+    .isologo {
+        @include media-up(md, lg) {
+            width: 100dvw;
+            margin-top: 30px;
+        }
+    }
 }
 
 .isologo {
     cursor: pointer;
-    @include media-up(md, lg) {
-        width: 100dvw;
-        margin-top: 30px;
-    }
+
     .isotipo {
         @include width-height(70px, 70px);
         margin: 10px 5px 10px 10px;
