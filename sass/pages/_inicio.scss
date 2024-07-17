@@ -246,7 +246,8 @@
             }
             @include media-up(sm, md) {
                 font-size: 2dvh;
-                padding: 0.5dvh 2dvh;
+                padding: 1dvh 2.5dvh;
+                width: 50%;
                 background-color: rgba(0, 0, 0, 0.562);
                 border-radius: 15px;
                 backdrop-filter: blur(8px);
@@ -267,14 +268,23 @@
         text-wrap: wrap;
         font-weight: 500;
         padding: 3dvw;
+        @include media-up(sm, md) {
+            scale: 2;
+            padding: 10% 0;
+        }
     }
     &__imagenes {
         width: 100%;
         @include flex-center(row, center, center);
+        @include media-up(sm, md) {
+            @include flex-center(column, center, center);
+            height: 200dvh;
+        }
         a {
             max-width: 20%;
             width: 20%;
             @include flex-center(column, center, center);
+
             text-decoration: none;
             font-family: montserrat, sans-serif;
             font-size: 2.5dvw;
@@ -283,26 +293,55 @@
             filter: grayscale(100%);
             transition: all 0.2s;
             cursor: default;
+            @include media-up(sm, md) {
+                max-width: 100%;
+                width: 100%;
+                height: 40dvh;
+                font-size: 3.5dvh;
+                filter: grayscale(0%);
+            }
             &:hover {
                 cursor: pointer;
                 filter: grayscale(0);
                 transition: all 0.2s;
+
                 span {
                     transform: translateY(-100%);
                     background-color: transparent;
                     backdrop-filter: blur(20px);
                     transition: all 0.2s;
+                    @include media-up(sm, md) {
+                        transform: none;
+                        backdrop-filter: none;
+                        background-color: #030321;
+                    }
                 }
             }
             img {
                 width: 100%;
+                @include media-up(sm, md) {
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
             span {
                 position: absolute;
-                width: 100%;
+                width: fit-content;
+                height: fit-content;
                 text-align: center;
                 bottom: 0;
+                width: 100%;
                 transition: all 0.2s;
+                @include media-up(sm, md) {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    background-color: #0303219d;
+                    padding: 20px;
+                    border-radius: 15px;
+                    width: 50%;
+                }
             }
         }
     }
@@ -315,7 +354,14 @@
         font-family: montserrat, sans-serif;
         font-weight: 500;
         font-size: 1.2dvw;
-
+        @include media-up(sm, md) {
+            font-size: 2dvh;
+            padding: 1dvh 2.5dvh;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.562);
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+        }
         &:hover {
             @include btn($color-accent, $color-primary-dark, $color-accent);
         }
