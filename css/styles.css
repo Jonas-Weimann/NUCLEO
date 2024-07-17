@@ -1071,6 +1071,12 @@ nav.active {
   text-wrap: wrap;
   font-weight: 500;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios h3 {
+    scale: 2;
+    padding: 10% 0;
+  }
+}
 .servicios .container {
   width: 80%;
   margin: 1em 0;
@@ -1085,12 +1091,31 @@ nav.active {
   border-radius: 20px;
   padding: 1rem;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+  }
+}
 .servicios .servicio-01 {
   grid-area: servicio-01;
   background: url(../images/index/servicio-01.jpg);
   background-size: cover;
   border-radius: 20px;
   transition: all 0.1s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-01 {
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .servicios .servicio-01:hover {
   scale: 1.05;
@@ -1104,6 +1129,11 @@ nav.active {
   font-weight: 500;
   color: #d9e520;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-01 h4 {
+    font-size: 10dvw;
+  }
+}
 .servicios .servicio-01 p {
   margin: 0 1em;
   font-family: "exo 2", sans-serif;
@@ -1112,12 +1142,27 @@ nav.active {
   color: #fff;
   width: 76%;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-01 p {
+    font-size: 3.5dvw;
+  }
+}
 .servicios .servicio-02 {
   grid-area: servicio-02;
   background: url(../images/index/servicio-02.jpg);
   background-size: cover;
   border-radius: 20px;
   transition: all 0.1s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-02 {
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .servicios .servicio-02:hover {
   scale: 1.05;
@@ -1131,6 +1176,11 @@ nav.active {
   font-weight: 500;
   color: #d9e520;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-02 h4 {
+    font-size: 10dvw;
+  }
+}
 .servicios .servicio-02 p {
   margin: 0 1em;
   font-family: "exo 2", sans-serif;
@@ -1139,12 +1189,27 @@ nav.active {
   color: #fff;
   width: 76%;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-02 p {
+    font-size: 3.5dvw;
+  }
+}
 .servicios .servicio-03 {
   grid-area: servicio-03;
   background: url(../images/index/servicio-03.jpg);
   background-size: cover;
   border-radius: 20px;
   transition: all 0.1s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-03 {
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .servicios .servicio-03:hover {
   scale: 1.05;
@@ -1158,6 +1223,11 @@ nav.active {
   font-weight: 500;
   color: #d9e520;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-03 h4 {
+    font-size: 10dvw;
+  }
+}
 .servicios .servicio-03 p {
   margin: 0 1em;
   font-family: "exo 2", sans-serif;
@@ -1166,12 +1236,27 @@ nav.active {
   color: #fff;
   width: 76%;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-03 p {
+    font-size: 3.5dvw;
+  }
+}
 .servicios .servicio-04 {
   grid-area: servicio-04;
   background: url(../images/index/servicio-04.jpg);
   background-size: cover;
   border-radius: 20px;
   transition: all 0.1s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-04 {
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .servicios .servicio-04:hover {
   scale: 1.05;
@@ -1185,6 +1270,11 @@ nav.active {
   font-weight: 500;
   color: #d9e520;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-04 h4 {
+    font-size: 10dvw;
+  }
+}
 .servicios .servicio-04 p {
   margin: 0 1em;
   font-family: "exo 2", sans-serif;
@@ -1193,12 +1283,27 @@ nav.active {
   color: #fff;
   width: 76%;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-04 p {
+    font-size: 3.5dvw;
+  }
+}
 .servicios .servicio-05 {
   grid-area: servicio-05;
   background: url(../images/index/servicio-05.jpg);
   background-size: cover;
   border-radius: 20px;
   transition: all 0.1s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-05 {
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .servicios .servicio-05:hover {
   scale: 1.05;
@@ -1212,6 +1317,11 @@ nav.active {
   font-weight: 500;
   color: #d9e520;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-05 h4 {
+    font-size: 10dvw;
+  }
+}
 .servicios .servicio-05 p {
   margin: 0 1em;
   font-family: "exo 2", sans-serif;
@@ -1219,6 +1329,11 @@ nav.active {
   font-weight: 500;
   color: #fff;
   width: 76%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .servicio-05 p {
+    font-size: 3.5dvw;
+  }
 }
 .servicios .boton {
   background-color: transparent;
@@ -1242,6 +1357,16 @@ nav.active {
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .servicios .boton {
+    font-size: 2dvh;
+    padding: 1dvh 2dvh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+  }
 }
 
 .opiniones {
