@@ -698,9 +698,19 @@ nav.active {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .section.info {
+    height: 100dvh;
+  }
+}
 .scroller {
   max-width: 100dvw;
   overflow: hidden;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .scroller {
+    height: 15dvh;
+  }
 }
 .scroller[data-animated=true] {
   overflow: hidden;
@@ -722,6 +732,11 @@ nav.active {
   gap: 1rem;
   background-color: black;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .scroller__inner {
+    height: 100%;
+  }
+}
 .scroller__inner .logo {
   list-style-type: none;
   font-family: montserrat, sans-serif;
@@ -734,9 +749,20 @@ nav.active {
   align-items: center;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .scroller__inner .logo {
+    height: 100%;
+  }
+}
 .scroller__inner .logo img {
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .scroller__inner .logo img {
+    max-width: 20dvw;
+    scale: 1.7;
+  }
 }
 
 .sony img {
@@ -771,12 +797,23 @@ nav.active {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-us {
+    height: 70dvh;
+    flex-direction: column;
+  }
+}
 .about-us img {
   width: 33%;
   border-radius: 20px;
 }
 .about-us img:last-child {
   transform: rotateY(180deg);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-us img {
+    display: none;
+  }
 }
 .about-us div {
   display: flex;
@@ -786,6 +823,13 @@ nav.active {
   height: 100%;
   width: 34%;
   gap: 2dvw;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-us div {
+    width: 100dvw;
+    background: url(../images/index/info-img.jpeg);
+    background-size: cover;
+  }
 }
 .about-us div h2 {
   display: flex;
@@ -802,12 +846,30 @@ nav.active {
   color: #d9e520;
   font-weight: 600;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-us div h2 {
+    font-size: 6dvh;
+    background-color: #01011d;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+  }
+}
 .about-us div p {
   width: 80%;
   font-size: 1.3dvw;
   color: #fff;
   text-align: center;
   font-family: "Exo 2", sans-serif;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-us div p {
+    font-size: 2.5dvh;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+  }
 }
 .about-us div .boton {
   background-color: transparent;
@@ -829,6 +891,15 @@ nav.active {
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-us div .boton {
+    font-size: 2dvh;
+    padding: 0.5dvh 2dvh;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+  }
 }
 
 .productos {
