@@ -117,15 +117,16 @@
           </div>
           <a class="boton" href="pages/servicios.html">Ver todos los servicios</a>
         </section>
-        <section class="section opiniones">
+        <section class="section opiniones" id="slider">
             <h5>Lo que opinan nuestros clientes</h5>
             <div class="opiniones__clientes">
+                <ion-icon name="chevron-back-outline" class="left-arrow"></ion-icon>
                 <div class="cliente-1">
                     <img src="images/index/avatar.jpg" alt="" class="cliente-1--foto">
                     <span class="cliente-1--nombre">Jonás Weimann</span>
                     <p class="cliente-1--opinion">"Muy bueno sisi apruebo"</p>
                 </div>
-                <div class="cliente-2">
+                <div class="cliente-2 active">
                     <img src="images/index/avatar.jpg" alt="" class="cliente-2--foto">
                     <span class="cliente-2--nombre">Jonás Weimann</span>
                     <p class="cliente-2--opinion">"Mmmm medio maleta"</p>
@@ -135,6 +136,7 @@
                     <span class="cliente-3--nombre">Jonás Weimann</span>
                     <p class="cliente-3--opinion">"Banco una locura"</p>
                 </div>
+                <ion-icon name="chevron-forward-outline" class="right-arrow"></ion-icon>
             </div>
             <a href="pages/opiniones.html" class="boton">Ver más</a>
         </section>
@@ -190,6 +192,7 @@
     </footer>
     <script type="text/javascript" src="scripts/dropdown-menu.js"></script>
     <script type="text/javascript" src="scripts/scroller.js"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

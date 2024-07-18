@@ -193,10 +193,6 @@ textarea {
   outline: none;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .flex-center-row {
   display: flex;
   flex-direction: row;
@@ -1074,7 +1070,7 @@ nav.active {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios h3 {
     scale: 2;
-    padding: 10% 0;
+    padding: 5% 0;
   }
 }
 .servicios .container {
@@ -1131,6 +1127,7 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-01 h4 {
+    margin: 0;
     font-size: 10dvw;
   }
 }
@@ -1144,6 +1141,8 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-01 p {
+    margin: 0;
+    padding: 0 0 0 1em;
     font-size: 3.5dvw;
   }
 }
@@ -1178,6 +1177,7 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-02 h4 {
+    margin: 0;
     font-size: 10dvw;
   }
 }
@@ -1191,6 +1191,8 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-02 p {
+    margin: 0;
+    padding: 0 0 0 1em;
     font-size: 3.5dvw;
   }
 }
@@ -1225,6 +1227,7 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-03 h4 {
+    margin: 0;
     font-size: 10dvw;
   }
 }
@@ -1238,6 +1241,8 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-03 p {
+    margin: 0;
+    padding: 0 0 0 1em;
     font-size: 3.5dvw;
   }
 }
@@ -1272,6 +1277,7 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-04 h4 {
+    margin: 0;
     font-size: 10dvw;
   }
 }
@@ -1285,6 +1291,8 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-04 p {
+    margin: 0;
+    padding: 0 0 0 1em;
     font-size: 3.5dvw;
   }
 }
@@ -1319,6 +1327,7 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-05 h4 {
+    margin: 0;
     font-size: 10dvw;
   }
 }
@@ -1332,6 +1341,8 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .servicios .servicio-05 p {
+    margin: 0;
+    padding: 0 0 0 1em;
     font-size: 3.5dvw;
   }
 }
@@ -1384,6 +1395,12 @@ nav.active {
   font-weight: 500;
   padding: 2dvw 0;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones h5 {
+    scale: 2;
+    padding: 5% 0;
+  }
+}
 .opiniones__clientes {
   display: flex;
   flex-direction: row;
@@ -1391,6 +1408,22 @@ nav.active {
   align-items: center;
   width: 60%;
   margin: 2em 0;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes ion-icon {
+    display: block;
+    width: 100px;
+    height: 50%;
+    color: #d9e520;
+    position: absolute;
+    cursor: pointer;
+  }
+  .opiniones__clientes .left-arrow {
+    left: 0;
+  }
+  .opiniones__clientes .right-arrow {
+    right: 0;
+  }
 }
 .opiniones__clientes .cliente-1 {
   display: flex;
@@ -1402,9 +1435,20 @@ nav.active {
   font-family: "exo 2", sans-serif;
   color: #fff;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-1 {
+    display: none;
+    transition: all 0.5s;
+  }
+}
 .opiniones__clientes .cliente-1 img {
   width: 30%;
   border-radius: 50%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-1 img {
+    width: 60%;
+  }
 }
 .opiniones__clientes .cliente-1 span {
   margin: 1em 0;
@@ -1412,9 +1456,35 @@ nav.active {
   font-weight: 500;
   font-size: 1.5dvw;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-1 span {
+    font-size: 4dvw;
+    margin: 0.5em;
+  }
+}
 .opiniones__clientes .cliente-1 p {
   font-size: 1dvw;
   text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-1 p {
+    font-size: 3dvw;
+  }
+}
+.opiniones__clientes .cliente-1.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes {
+    width: 50%;
+    height: 40dvh;
+    background-color: rgba(0, 0, 0, 0.4431372549);
+    border-radius: 15px;
+  }
 }
 .opiniones__clientes .cliente-2 {
   display: flex;
@@ -1426,9 +1496,20 @@ nav.active {
   font-family: "exo 2", sans-serif;
   color: #fff;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-2 {
+    display: none;
+    transition: all 0.5s;
+  }
+}
 .opiniones__clientes .cliente-2 img {
   width: 30%;
   border-radius: 50%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-2 img {
+    width: 60%;
+  }
 }
 .opiniones__clientes .cliente-2 span {
   margin: 1em 0;
@@ -1436,9 +1517,35 @@ nav.active {
   font-weight: 500;
   font-size: 1.5dvw;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-2 span {
+    font-size: 4dvw;
+    margin: 0.5em;
+  }
+}
 .opiniones__clientes .cliente-2 p {
   font-size: 1dvw;
   text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-2 p {
+    font-size: 3dvw;
+  }
+}
+.opiniones__clientes .cliente-2.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes {
+    width: 50%;
+    height: 40dvh;
+    background-color: rgba(0, 0, 0, 0.4431372549);
+    border-radius: 15px;
+  }
 }
 .opiniones__clientes .cliente-3 {
   display: flex;
@@ -1450,9 +1557,20 @@ nav.active {
   font-family: "exo 2", sans-serif;
   color: #fff;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-3 {
+    display: none;
+    transition: all 0.5s;
+  }
+}
 .opiniones__clientes .cliente-3 img {
   width: 30%;
   border-radius: 50%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-3 img {
+    width: 60%;
+  }
 }
 .opiniones__clientes .cliente-3 span {
   margin: 1em 0;
@@ -1460,9 +1578,35 @@ nav.active {
   font-weight: 500;
   font-size: 1.5dvw;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-3 span {
+    font-size: 4dvw;
+    margin: 0.5em;
+  }
+}
 .opiniones__clientes .cliente-3 p {
   font-size: 1dvw;
   text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes .cliente-3 p {
+    font-size: 3dvw;
+  }
+}
+.opiniones__clientes .cliente-3.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones__clientes {
+    width: 50%;
+    height: 40dvh;
+    background-color: rgba(0, 0, 0, 0.4431372549);
+    border-radius: 15px;
+  }
 }
 .opiniones .boton {
   background-color: transparent;
@@ -1485,6 +1629,16 @@ nav.active {
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .opiniones .boton {
+    font-size: 2dvh;
+    padding: 1dvh 2dvh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+  }
 }
 
 .contacto {

@@ -380,7 +380,7 @@
         font-weight: 500;
         @include media-up(sm, md) {
             scale: 2;
-            padding: 10% 0;
+            padding: 5% 0;
         }
     }
     .container {
@@ -428,6 +428,7 @@
                 font-weight: 500;
                 color: $color-accent;
                 @include media-up(sm, md) {
+                    margin: 0;
                     font-size: 10dvw;
                 }
             }
@@ -439,6 +440,8 @@
                 color: $color-white;
                 width: 76%;
                 @include media-up(sm, md) {
+                    margin: 0;
+                    padding: 0 0 0 1em;
                     font-size: 3.5dvw;
                 }
             }
@@ -470,6 +473,8 @@
 .opiniones {
     @include flex-center(column, center, center);
     background-color: #030321;
+    @include media-up(sm, md) {
+    }
     h5 {
         font-family: montserrat, sans-serif;
         color: $color-secondary-light;
@@ -477,11 +482,32 @@
         text-wrap: wrap;
         font-weight: 500;
         padding: 2dvw 0;
+        @include media-up(sm, md) {
+            scale: 2;
+            padding: 5% 0;
+        }
     }
     &__clientes {
         @include flex-center(row, center, center);
         width: 60%;
         margin: 2em 0;
+        @include media-up(sm, md) {
+            ion-icon {
+                display: block;
+                width: 100px;
+                height: 50%;
+                color: $color-accent;
+                position: absolute;
+                cursor: pointer;
+            }
+            .left-arrow {
+                left: 0;
+            }
+            .right-arrow {
+                right: 0;
+            }
+        }
+
         @for $i from 1 through 3 {
             .cliente-#{$i} {
                 @include flex-center(column, center, center);
@@ -489,20 +515,44 @@
                 padding: 0;
                 font-family: "exo 2", sans-serif;
                 color: $color-white;
+                @include media-up(sm, md) {
+                    display: none;
+                    transition: all 0.5s;
+                }
                 img {
                     width: 30%;
                     border-radius: 50%;
+                    @include media-up(sm, md) {
+                        width: 60%;
+                    }
                 }
                 span {
                     margin: 1em 0;
                     text-align: center;
                     font-weight: 500;
                     font-size: 1.5dvw;
+                    @include media-up(sm, md) {
+                        font-size: 4dvw;
+                        margin: 0.5em;
+                    }
                 }
                 p {
                     font-size: 1dvw;
                     text-align: center;
+                    @include media-up(sm, md) {
+                        font-size: 3dvw;
+                    }
                 }
+                &.active {
+                    @include flex-center(column, center, center);
+                    transition: all 0.5s;
+                }
+            }
+            @include media-up(sm, md) {
+                width: 50%;
+                height: 40dvh;
+                background-color: #00000071;
+                border-radius: 15px;
             }
         }
     }
@@ -517,6 +567,14 @@
 
         &:hover {
             @include btn($color-accent, $color-primary-dark, $color-accent);
+        }
+        @include media-up(sm, md) {
+            font-size: 2dvh;
+            padding: 1dvh 2dvh;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.562);
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
         }
     }
 }

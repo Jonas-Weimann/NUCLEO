@@ -21,5 +21,3 @@ document.querySelectorAll(".menu__link").forEach(n => n.addEventListener("click"
     bar1.classList.toggle("animation");
     bar3.classList.toggle("animation");
 }))
-
-bar1
