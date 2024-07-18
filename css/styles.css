@@ -518,6 +518,7 @@ nav.active {
   .footer-1 {
     order: 4;
     width: 100%;
+    margin-top: 5em;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -563,7 +564,20 @@ nav.active {
     font-size: 3dvw;
   }
 }
-.footer-section a,
+.footer-section a {
+  font-family: "exo 2", sans-serif;
+  font-size: 1dvw;
+  font-weight: 500;
+  text-decoration: none;
+  max-width: 400px;
+  color: #757575;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-section a {
+    font-size: 3dvw;
+    text-align: center;
+  }
+}
 .footer-section p {
   font-family: "exo 2", sans-serif;
   font-size: 1dvw;
@@ -573,9 +587,9 @@ nav.active {
   color: #757575;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .footer-section a,
   .footer-section p {
-    font-size: 2.5dvw;
+    font-size: 2dvw;
+    max-width: 100%;
     text-align: center;
   }
 }

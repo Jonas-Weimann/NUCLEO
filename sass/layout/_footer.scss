@@ -29,6 +29,7 @@
         @include media-up(sm, md) {
             order: 4;
             width: 100%;
+            margin-top: 5em;
         }
     }
 
@@ -64,7 +65,18 @@
                 font-size: 3dvw;
             }
         }
-        a,
+        a {
+            font-family: "exo 2", sans-serif;
+            font-size: 1dvw;
+            font-weight: 500;
+            text-decoration: none;
+            max-width: 400px;
+            color: $color-grey-light;
+            @include media-up(sm, md) {
+                font-size: 3dvw;
+                text-align: center;
+            }
+        }
         p {
             font-family: "exo 2", sans-serif;
             font-size: 1dvw;
@@ -73,7 +85,8 @@
             max-width: 400px;
             color: $color-grey-light;
             @include media-up(sm, md) {
-                font-size: 2.5dvw;
+                font-size: 2dvw;
+                max-width: 100%;
                 text-align: center;
             }
         }
