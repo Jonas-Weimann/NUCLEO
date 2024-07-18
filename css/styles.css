@@ -489,6 +489,15 @@ nav.active {
   width: 100dvw;
   padding: 60px 40px;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .footer-2, .footer-3, .footer-4 {
   padding: 20px 15px;
   width: 15dvw;
@@ -505,17 +514,54 @@ nav.active {
 .footer-2 a:hover, .footer-3 a:hover, .footer-4 a:hover {
   color: #fff;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-1 {
+    order: 4;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-2 {
+    order: 3;
+    width: 100dvw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-3 {
+    order: 2;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-4 {
+    order: 1;
+    width: 50%;
+  }
+}
 .footer-section {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .footer-section h6 {
   font-family: montserrat, sans-serif;
   font-size: 1.3dvw;
   margin-bottom: 1em;
   color: #fff;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-section h6 {
+    font-size: 3dvw;
+  }
 }
 .footer-section a,
 .footer-section p {
@@ -525,6 +571,13 @@ nav.active {
   text-decoration: none;
   max-width: 400px;
   color: #757575;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-section a,
+  .footer-section p {
+    font-size: 2.5dvw;
+    text-align: center;
+  }
 }
 .footer-section .isologo {
   max-width: 500px;
@@ -545,6 +598,12 @@ nav.active {
   flex-direction: column;
   justify-content: left;
   align-items: left;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-section .links__container .links {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .landing {
