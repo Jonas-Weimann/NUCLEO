@@ -21,9 +21,11 @@
         h1 {
             font-size: 5rem;
             @include media-up(sm, md) {
+                text-align: center;
                 font-size: 3rem;
             }
             @include media-up(md, lg) {
+                text-align: center;
                 font-size: 5dvw;
             }
         }
@@ -582,6 +584,10 @@
     @include flex-center(row, center, center);
     background-color: $color-primary;
     gap: 3em;
+    @include media-up(sm, md) {
+        @include flex-center(column, center, center);
+        gap: 0;
+    }
     h6 {
         font-family: montserrat, sans-serif;
         color: $color-secondary-light;
@@ -589,6 +595,11 @@
         text-wrap: wrap;
         font-weight: 500;
         padding: 2dvw 0;
+        @include media-up(sm, md) {
+            @include flex-center(column, center, center);
+            font-size: 4dvw;
+            padding-bottom: 0;
+        }
     }
     a {
         font-family: montserrat, sans-serif;
@@ -599,6 +610,10 @@
         padding: 2dvw 0;
         text-decoration: none;
         transition: all 0.1s;
+        @include media-up(sm, md) {
+            font-size: 6dvw;
+        }
+
         &:hover {
             color: $color-accent;
         }

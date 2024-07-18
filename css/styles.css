@@ -193,6 +193,10 @@ textarea {
   outline: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .flex-center-row {
   display: flex;
   flex-direction: row;
@@ -589,11 +593,13 @@ nav.active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .landing__text h1 {
+    text-align: center;
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   .landing__text h1 {
+    text-align: center;
     font-size: 5dvw;
   }
 }
@@ -1649,6 +1655,15 @@ nav.active {
   background-color: #0a0a36;
   gap: 3em;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}
 .contacto h6 {
   font-family: montserrat, sans-serif;
   color: #b996ff;
@@ -1656,6 +1671,16 @@ nav.active {
   text-wrap: wrap;
   font-weight: 500;
   padding: 2dvw 0;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contacto h6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4dvw;
+    padding-bottom: 0;
+  }
 }
 .contacto a {
   font-family: montserrat, sans-serif;
@@ -1666,6 +1691,11 @@ nav.active {
   padding: 2dvw 0;
   text-decoration: none;
   transition: all 0.1s;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contacto a {
+    font-size: 6dvw;
+  }
 }
 .contacto a:hover {
   color: #d9e520;
